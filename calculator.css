@@ -1,0 +1,114 @@
+*{  
+    /* reset the default value */
+    margin: 0px;
+    padding: 0px;
+    font-family: cursive;
+}
+
+body
+{
+    background-color: #394914;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.frame{
+    /* Whole body of calculator */
+    border-radius: 5%;
+    background-color: rgba(238, 224, 148, 0.884);
+    height: 500px;
+    width: 350px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px rgb(115, 205, 233), -5px -5px 10px whitesmoke;
+}
+.heading{
+
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+}
+.display{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    background-color: #1222d4;
+    border-radius: 60%;
+    margin-bottom: 30px;
+}
+
+#displayInput{
+    /* For input box */
+    height: 80px;
+    width: 100%;
+    border: 2.5px solid rgba(55, 59, 63, 0.336);
+    outline: none;
+    background: white;
+    box-shadow: 2px 2px 10px #b4edf4, inset -5px -5px 10px #ffffff;
+    font-size: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right; 
+}
+
+.buttonGroup{
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.button{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5%;
+    outline: none;
+    border: none;
+    /* ................................................
+        here:- 
+        5px - for right side verticle shadow,
+        5px- for down side shadow,
+        10px - for bullor the shadow.
+        and "-" values used for top and left side shadow */
+    box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #fafaf4;
+}
+.button:active{
+    box-shadow: inset 1px 1px 2px #1222d4, inset -1px -1px 2px #a70e0e;
+}
+.button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#clearbutton{
+    background-color: aqua;
+    border-radius: 100%;
+    font-size: 25px;
+}
+#clearbutton:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+#equalbutton{
+    background-color: aqua;
+    border-radius: 100%;
+    padding: 0px;
+    font-size: 25px;
+}
+#equalbutton:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+#theme{
+    font-size: 15px;
+    background-color: aqua;
+    border-radius: 100%;
+    padding: 0px;
+}
+#theme:hover{
+    background-image: conic-gradient(#FFDE59,#14af43,#f5480a);
+    cursor: pointer;
+    font-size: 0px;
+}
